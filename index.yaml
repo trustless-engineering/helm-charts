@@ -1,2 +1,88 @@
 apiVersion: v1
-entries: []
+entries:
+  faktory:
+  - apiVersion: v1
+    appVersion: 1.6.0
+    created: "2023-06-28T09:04:12.223651-04:00"
+    description: A Helm chart for deploying Faktory
+    digest: 28b7ceceb798831c05947ca30210e476432ce4ababb7a65652be6bc74dd36190
+    home: https://github.com/contribsys/faktory
+    icon: https://contribsys.com/images/faktory-logo.svg
+    kubeVersion: '>= 1.9.0-0'
+    maintainers:
+    - name: jbielick
+    name: faktory
+    sources:
+    - https://github.com/contribsys/faktory
+    - https://github.com/AdWerx/charts/tree/master/faktory
+    urls:
+    - charts/faktory-0.12.3.tgz
+    version: 0.12.3
+  postgresql:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 15.3.0
+    created: "2023-06-28T09:04:12.226951-04:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 85536e44a499d7e7a3c35d176c57b7116d8659e86ff6b49b9171d0b77dc94c84
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - charts/postgresql-12.5.6.tgz
+    version: 12.5.6
+  redis:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.11
+    created: "2023-06-28T09:04:12.231457-04:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 23c50664df2dcb5a3afbdc3ec12d19567c71b710a05318cfce449ad7c6e163af
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - charts/redis-17.11.3.tgz
+    version: 17.11.3
+generated: "2023-06-28T09:04:12.220374-04:00"
