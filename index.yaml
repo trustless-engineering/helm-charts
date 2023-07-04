@@ -2,6 +2,27 @@ apiVersion: v1
 entries:
   sol-panel:
   - apiVersion: v2
+    appVersion: v1.0.0-next.95
+    created: "2023-07-04T20:10:34.787952535Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.6.0
+    - name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.11.6
+    - name: faktory
+      repository: https://adwerx.github.io/charts
+      version: 0.12.3
+    description: Sol Panel is a web-based tool for managing Solana RPC Nodes
+    digest: b3c78ac3ade991e20d40209032ce4191b1277a56759d8880761495b17ed07fbd
+    icon: https://raw.githubusercontent.com/trustless-engineering/sol-panel/main/public/favicon.ico
+    name: sol-panel
+    type: application
+    urls:
+    - https://github.com/trustless-engineering/helm-charts/releases/download/sol-panel-v1.0.0-next.95/sol-panel-v1.0.0-next.95.tgz
+    version: v1.0.0-next.95
+  - apiVersion: v2
     appVersion: v1.0.0-next.94
     created: "2023-07-04T20:06:32.638377586Z"
     dependencies:
@@ -762,4 +783,4 @@ entries:
     urls:
     - https://github.com/trustless-engineering/helm-charts/releases/download/sol-panel-1.0.0-next.25/sol-panel-1.0.0-next.25.tgz
     version: 1.0.0-next.25
-generated: "2023-07-04T20:06:32.638867792Z"
+generated: "2023-07-04T20:10:34.788558802Z"
